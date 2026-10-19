@@ -79,11 +79,11 @@
     .card-top { display: flex; justify-content: space-between; align-items: start; gap: 10px; }
     .plant-name { font-size: 1.08rem; line-height: 1.25; margin: 0; overflow-wrap: anywhere; }
     .price { flex-shrink: 0; background: var(--sun); color: #493a0b; border-radius: 10px; padding: 5px 9px; font-weight: 900; white-space: nowrap; }
-    .quantity { margin: 6px 0 0; font-size: 0.9rem; color: #456b58; font-weight: 600; }
-    .pot-size { margin: 6px 0 0; font-size: 0.9rem; color: #456b58; font-weight: 600; }
+    .quantity, .pot-size { margin: 6px 0 0; font-size: 0.9rem; color: #456b58; font-weight: 600; }
     .description { color: var(--muted); font-size: .92rem; margin: 10px 0 0; overflow-wrap: anywhere; }
     .card-foot { margin-top: auto; padding-top: 13px; }
     .note { font-size: .82rem; color: var(--muted); }
+    .message { grid-column: 1 / -1; color: var(--muted); padding: 20px 0; }
     .footer { background: #e5f1e7; border-top: 1px solid #d0e0d2; padding: 22px 0; }
     .footer-inner { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
     .footer p { margin: 0; color: #425847; font-size: .9rem; }
@@ -119,7 +119,7 @@
     <section class="intro" aria-label="Plant listings">
       <div>
         <h2>What’s growing</h2>
-        <p id="count">30 listings · check each card for availability</p>
+        <p id="count">Loading plants…</p>
       </div>
       <div class="filter-row" aria-label="Filter listings">
         <button class="filter" type="button" data-filter="all" aria-pressed="true">All plants</button>
@@ -128,172 +128,8 @@
       </div>
     </section>
 
-    <section class="grid" id="plant-grid" aria-label="Plants for sale">
-      <!--
-        EDITING A LISTING:
-        1. Put your photo in the images folder, e.g. images/plant-01.jpg
-        2. Replace the name, description, and price below.
-        3. To mark sold, change data-status="available" to data-status="sold"
-           and change the badge text from Available to Sold.
-        4. If you don't have a photo yet, leave the placeholder as-is.
-        You can delete any unused listing card.
-      -->
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap">
-          <img src="images/plant-01.jpg" alt="Photo of [Plant name]" onerror="this.remove()">
-          <div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 01</strong><small>Add images/plant-01.jpg</small></div>
-          <span class="status">Available</span>
-        </div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 01</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 3</p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD END -->
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-02.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 02</strong><small>Add images/plant-02.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 02</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-03.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 03</strong><small>Add images/plant-03.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 03</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-04.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 04</strong><small>Add images/plant-04.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 04</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-05.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 05</strong><small>Add images/plant-05.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 05</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-06.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 06</strong><small>Add images/plant-06.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 06</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-07.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 07</strong><small>Add images/plant-07.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 07</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-08.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 08</strong><small>Add images/plant-08.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 08</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-09.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 09</strong><small>Add images/plant-09.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 09</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-10.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 10</strong><small>Add images/plant-10.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 10</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-11.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 11</strong><small>Add images/plant-11.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 11</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-12.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 12</strong><small>Add images/plant-12.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 12</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-13.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 13</strong><small>Add images/plant-13.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 13</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-14.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 14</strong><small>Add images/plant-14.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 14</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-15.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 15</strong><small>Add images/plant-15.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 15</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-16.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 16</strong><small>Add images/plant-16.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 16</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-17.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 17</strong><small>Add images/plant-17.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 17</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-18.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 18</strong><small>Add images/plant-18.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 18</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-19.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 19</strong><small>Add images/plant-19.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 19</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-20.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 20</strong><small>Add images/plant-20.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 20</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-21.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 21</strong><small>Add images/plant-21.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 21</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-22.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 22</strong><small>Add images/plant-22.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 22</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-23.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 23</strong><small>Add images/plant-23.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 23</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-24.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 24</strong><small>Add images/plant-24.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 24</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-25.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 25</strong><small>Add images/plant-25.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 25</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-26.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 26</strong><small>Add images/plant-26.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 26</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-27.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 27</strong><small>Add images/plant-27.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 27</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-28.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌱</span><strong>Plant photo 28</strong><small>Add images/plant-28.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 28</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-29.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🌿</span><strong>Plant photo 29</strong><small>Add images/plant-29.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 29</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-      <!-- PLANT CARD START -->
-      <article class="plant-card" data-status="available">
-        <div class="photo-wrap"><img src="images/plant-30.jpg" alt="Photo of [Plant name]" onerror="this.remove()"><div class="photo-placeholder"><span class="sprout">🪴</span><strong>Plant photo 30</strong><small>Add images/plant-30.jpg</small></div><span class="status">Available</span></div>
-        <div class="card-body"><div class="card-top"><h3 class="plant-name">Plant name 30</h3><span class="price">$—</span></div><p class="quantity">Quantity available: 1</p><p class="pot-size">Pot size: </p><p class="description">Add a short description, pot size, or care note.</p><div class="card-foot"><span class="note">Message me to claim</span></div></div>
-      </article>
-    </section>
+    <!-- Cards are built from plants.json. Edit that file, not this one. -->
+    <section class="grid" id="plant-grid" aria-label="Plants for sale"></section>
   </main>
 
   <footer class="footer">
@@ -302,33 +138,102 @@
       <p>Questions or want to claim a plant? Contact me directly.</p>
     </div>
   </footer>
+
   <script>
-    // Small client-side filter; no libraries or build tools needed.
-    const buttons = document.querySelectorAll('.filter');
-    const cards = document.querySelectorAll('.plant-card');
+    const grid = document.getElementById('plant-grid');
     const count = document.getElementById('count');
+    const buttons = document.querySelectorAll('.filter');
+    const DOODLES = ['🌱', '🌿', '🪴'];
+    let currentFilter = 'all';
+
+    function el(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+
+    function formatPrice(price) {
+      if (price === '' || price === null || price === undefined) return '$—';
+      const str = String(price).trim();
+      return str.startsWith('$') ? str : '$' + str;
+    }
+
+    function buildCard(plant, index) {
+      const isSold = String(plant.status || 'available').toLowerCase() === 'sold';
+      const name = plant.name || 'Plant ' + (index + 1);
+
+      const card = el('article', 'plant-card');
+      card.dataset.status = isSold ? 'sold' : 'available';
+
+      const photoWrap = el('div', 'photo-wrap');
+      const placeholder = el('div', 'photo-placeholder');
+      placeholder.append(
+        el('span', 'sprout', DOODLES[index % DOODLES.length]),
+        el('strong', '', 'Photo coming soon')
+      );
+      if (plant.image) {
+        const img = document.createElement('img');
+        img.src = 'images/' + plant.image;
+        img.alt = 'Photo of ' + name;
+        img.addEventListener('load', () => placeholder.classList.add('hidden'));
+        img.addEventListener('error', () => img.remove());
+        photoWrap.append(img);
+        if (img.complete && img.naturalWidth > 0) placeholder.classList.add('hidden');
+      }
+      photoWrap.append(placeholder, el('span', 'status' + (isSold ? ' sold' : ''), isSold ? 'Sold' : 'Available'));
+
+      const body = el('div', 'card-body');
+      const top = el('div', 'card-top');
+      top.append(el('h3', 'plant-name', name), el('span', 'price', formatPrice(plant.price)));
+      body.append(top);
+
+      if (plant.quantity !== '' && plant.quantity != null) {
+        body.append(el('p', 'quantity', 'Quantity available: ' + plant.quantity));
+      }
+      if (plant.pot_size) body.append(el('p', 'pot-size', 'Pot size: ' + plant.pot_size));
+      if (plant.description) body.append(el('p', 'description', plant.description));
+
+      const foot = el('div', 'card-foot');
+      foot.append(el('span', 'note', isSold ? 'This one found a home' : 'Message me to claim'));
+      body.append(foot);
+
+      card.append(photoWrap, body);
+      return card;
+    }
+
+    function applyFilter() {
+      let shown = 0;
+      grid.querySelectorAll('.plant-card').forEach(card => {
+        const matches = currentFilter === 'all' || card.dataset.status === currentFilter;
+        card.classList.toggle('hidden', !matches);
+        if (matches) shown++;
+      });
+      count.textContent = `${shown} ${shown === 1 ? 'listing' : 'listings'} · check each card for availability`;
+    }
+
     buttons.forEach(button => {
       button.addEventListener('click', () => {
-        const filter = button.dataset.filter;
+        currentFilter = button.dataset.filter;
         buttons.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
-        let shown = 0;
-        cards.forEach(card => {
-          const matches = filter === 'all' || card.dataset.status === filter;
-          card.classList.toggle('hidden', !matches);
-          if (matches) shown++;
-        });
-        count.textContent = `${shown} ${shown === 1 ? 'listing' : 'listings'} · check each card for availability`;
+        applyFilter();
       });
     });
-    // Hide photo placeholders automatically once a real image has loaded.
-    document.querySelectorAll('.photo-wrap img').forEach(img => {
-      const hidePlaceholder = () => {
-        const placeholder = img.parentElement.querySelector('.photo-placeholder');
-        if (placeholder) placeholder.classList.add('hidden');
-      };
-      if (img.complete && img.naturalWidth > 0) hidePlaceholder();
-      else img.addEventListener('load', hidePlaceholder);
-    });
+
+    fetch('plants.json', { cache: 'no-cache' })
+      .then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(plants => {
+        plants.forEach((plant, i) => grid.append(buildCard(plant, i)));
+        applyFilter();
+      })
+      .catch(err => {
+        console.error('Could not load plants.json', err);
+        count.textContent = '';
+        grid.append(el('p', 'message', 'Sorry, the plant list could not be loaded. Please try again later.'));
+      });
   </script>
 </body>
 </html>
