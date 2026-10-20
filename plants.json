@@ -37,7 +37,7 @@
   },
   {
     "name": "Cylindrical snake plant start",
-    "price": 8,
+    "price": 5,
     "pot_size": "water-rooted",
     "quantity": 3,
     "description": "Has unique spear-shaped leaves that grow upright. It is a low-maintenance plant that can thrive in low light conditions and requires minimal watering. It also does well growing in just water.",
@@ -91,7 +91,7 @@
   },
   {
     "name": "Cylindrical snake plant",
-    "price": 12,
+    "price": 10,
     "pot_size": "6 inches",
     "quantity": 1,
     "description": "Has unique spear-shaped leaves that grow upright. It is a low-maintenance plant that requires minimal watering. Slow growing, but a very cool sculptural plant.",
@@ -136,7 +136,7 @@
   },
   {
     "name": "Philodendron 'Prince of Orange'",
-    "price": 6,
+    "price": 5,
     "pot_size": "3 inches",
     "quantity": 1,
     "description": "New leaves emerge a vivid, glowing orange or coppery shade and mature into a deep, glossy green. Upright growth habit with a bushy appearance.",
@@ -154,7 +154,7 @@
   },
   {
     "name": "Marble Queen Pothos start",
-    "price": 1,
+    "price": ".50",
     "pot_size": "water-rooted",
     "quantity": 10,
     "description": "Vining plant with marble-like patterns on its leaves.",
@@ -163,7 +163,7 @@
   },
   {
     "name": "Angel wing begonia start",
-    "price": 1,
+    "price": ".50",
     "pot_size": "water-rooted start",
     "quantity": 4,
     "description": "Begonia with distinctive angel-wing shaped leaves. Develops pink flowers in the summer. Prefers bright, indirect light and moderate watering.",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Kalanchoe start",
-    "price": 1,
+    "price": ".50",
     "pot_size": "water-rooted",
     "quantity": 8,
     "description": "Small succulent plant with thick, fleshy leaves. Develops clusters of small, white flowers in the spring. Prefers bright, indirect light and minimal watering.",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Scindapsus starts",
-    "price": 5,
+    "price": 3,
     "pot_size": "5 water-rooted starts",
     "quantity": 1,
     "description": "Vining plant with beautiful silver and green leaves. Also known as Satin Pothos. 5 starts for $5",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Variagated Spider Plant start",
-    "price": 1,
+    "price": ".25",
     "pot_size": "water-rooted",
     "quantity": 6, 
     "description": "Large starts rooted in water.",
