@@ -1,6 +1,8 @@
-# Plant Sale — GitHub Pages starter
+# Plant Sale — GitHub Pages starter project
 
 A one-page, mobile-friendly plant catalog. It uses only HTML, CSS, and a tiny bit of JavaScript—no framework, build step, database, or checkout.
+
+[Plant Sale Website](https://starmoss.github.io/Plant-Sale-Website/)
 
 ## Files
 
@@ -18,7 +20,7 @@ For each plant card in `index.html`:
 5. If you have a photo with a different filename, update that card's `src="images/plant-01.jpg"` to match.
 6. To mark a plant sold, change the card's `data-status="available"` to `data-status="sold"` and change the visible badge from `Available` to `Sold`.
 
-If you don't need all 30 slots, delete any complete `<article class="plant-card" ...> ... </article>` block. If you need more, copy a complete card and update its image number and listing details.
+If you don't need all of the slots, delete any complete `<article class="plant-card" ...> ... </article>` block. If you need more, copy a complete card and update its image number and listing details.
 
 **Image tips:** Use `.jpg`, `.jpeg`, `.png`, or `.webp` filenames consistently. Resize very large phone photos to about 1200 pixels on the longest edge to make the page load faster. Filenames are case-sensitive on GitHub Pages.
 
