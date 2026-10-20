@@ -2,7 +2,7 @@
   {
     "name": "Hoya Carnosa",
     "price": 8,
-    "pot_size": "4 inches",
+    "pot_size": "3.5 inches",
     "quantity": 1,
     "description": "Also known as the Wax Plant. It is easy to care for and thrives in bright, indirect light.",
     "status": "available",
@@ -11,7 +11,7 @@
   {
     "name": "Aloe Vera in ceramic pot",
     "price": 20,
-    "pot_size": "4 inches",
+    "pot_size": "6 inches",
     "quantity": 1,
     "description": "Low maintenance plant that requires minimal watering. It is a succulent plant that can thrive in bright, indirect light and is known for its medicinal properties.",
     "status": "available",
@@ -29,7 +29,7 @@
   {
     "name": "Succulent Mix",
     "price": "10",
-    "pot_size": "",
+    "pot_size": "3.5 inches",
     "quantity": 1,
     "description": "Jade, Crassula, and Echeveria plants in a 4-inch pot. These plants are easy to care for and require minimal watering.",
     "status": "available",
@@ -37,9 +37,9 @@
   },
   {
     "name": "Cylindrical snake plant start",
-    "price": 5,
+    "price": 8,
     "pot_size": "water-rooted",
-    "quantity": 1,
+    "quantity": 3,
     "description": "Has unique spear-shaped leaves that grow upright. It is a low-maintenance plant that can thrive in low light conditions and requires minimal watering. It also does well growing in just water.",
     "status": "available",
     "image": "plant-05.jpg"
@@ -47,25 +47,25 @@
   {
     "name": "Trailing Philodendron",
     "price": "10",
-    "pot_size": "",
+    "pot_size": "6 inches",
     "quantity": 1,
-    "description": "Ten-foot vines of this plant can be trained to grow up a trellis or along a wall. It is a low-maintenance plant that can thrive in low light conditions.",
+    "description": "Ten-foot vines of this plant can be trained to grow up a trellis or along a wall.",
     "status": "available",
     "image": "plant-06.jpg"
   },
   {
     "name": "Monstera Deliciosa",
     "price": 6,
-    "pot_size": "4 inches",
+    "pot_size": "6 inches",
     "quantity": 1,
-    "description": "",
+    "description": "Large, glossy leaves that develop splits and holes as they mature. Also known as the Swiss Cheese Plant. ",
     "status": "available",
     "image": "plant-07.jpg"
   },
     {
     "name": "Spider Plant",
     "price": 20,
-    "pot_size": "4 inches",
+    "pot_size": "10 inches",
     "quantity": 2,
     "description": "Large hanging plant. Easy to care for and can thrive in a variety of lighting conditions. It is known for its ability to produce baby plants along its stems.",
     "status": "available",
@@ -74,7 +74,7 @@
   {
     "name": "Aloe Vera",
     "price": 12,
-    "pot_size": "4 inches",
+    "pot_size": "6 inches",
     "quantity": 1,
     "description": "It is a succulent plant that can thrive in bright, indirect light and is known for its medicinal properties.",
     "status": "available",
@@ -83,32 +83,32 @@
   {
     "name": "Monstera Deliciosa",
     "price": 20,
-    "pot_size": "",
+    "pot_size": "7 inches",
     "quantity": 1,
-    "description": "Large, glossy leaves that develop splits and holes as they mature. Also known as the Swiss Cheese Plant. It is a low-maintenance plant that can thrive in low light conditions.",
+    "description": "Large, glossy leaves that develop splits and holes as they mature. Also known as the Swiss Cheese Plant. Includes a moss pole for support. It's only been in this pot for a year, but it grows quickly and is already getting a bit root-bound.",
     "status": "available",
     "image": "plant-10.jpg"
   },
   {
     "name": "Cylindrical snake plant",
-    "price": 10,
-    "pot_size": "",
+    "price": 12,
+    "pot_size": "6 inches",
     "quantity": 1,
-    "description": "Has unique spear-shaped leaves that grow upright. It is a low-maintenance plant that can thrive in low light conditions and requires minimal watering. It also does well growing in just water.",
+    "description": "Has unique spear-shaped leaves that grow upright. It is a low-maintenance plant that requires minimal watering. Slow growing, but a very cool sculptural plant.",
     "status": "available",
     "image": "plant-11.jpg"
   },
   {
     "name": "Aloe in ceramic pot",
     "price": 8,
-    "pot_size": "inches",
+    "pot_size": "4 inches",
     "quantity": 1,
     "description": "Low maintenance plant that requires minimal watering. It is a succulent plant that can thrive in bright, indirect light and is known for its medicinal properties.",
     "status": "available",
     "image": "plant-12.jpg"
   },
   {
-    "name": "Money Plant starts",
+    "name": "Money Plant start",
     "price": 1,
     "pot_size": "water-rooted",
     "quantity": 3,
@@ -118,8 +118,8 @@
   },
   {
     "name": "Variagated Snake Plant",
-    "price": 12,
-    "pot_size": "inches",
+    "price": 10,
+    "pot_size": "3.5 inches",
     "quantity": 1,
     "description": "Small snake plant with variegated leaves. It is a low-maintenance plant that can thrive in low light conditions and requires minimal watering.",
     "status": "available",
@@ -128,7 +128,7 @@
   {
     "name": "Philodendron Brasil",
     "price": 8,
-    "pot_size": "inches",
+    "pot_size": "4 inches",
     "quantity": 1,
     "description": "Variaged philodendron with heart-shaped leaves.",
     "status": "available",
@@ -136,8 +136,8 @@
   },
   {
     "name": "Philodendron 'Prince of Orange'",
-    "price": 20,
-    "pot_size": "inches",
+    "price": 6,
+    "pot_size": "3 inches",
     "quantity": 1,
     "description": "New leaves emerge a vivid, glowing orange or coppery shade and mature into a deep, glossy green. Upright growth habit with a bushy appearance.",
     "status": "available",
@@ -146,51 +146,51 @@
   {
     "name": "Aloe Vera in terracotta pot",
     "price": 12,
-    "pot_size": "inches",
+    "pot_size": "6 inches",
     "quantity": 1,
     "description": "Succulent plant that can thrive in bright, indirect light and is known for its medicinal properties.",
     "status": "available",
     "image": "plant-17.jpg"
   },
   {
-    "name": "Marble pothos",
-    "price": ".25",
-    "pot_size": "water-rooted start",
+    "name": "Marble Queen Pothos start",
+    "price": 1,
+    "pot_size": "water-rooted",
     "quantity": 10,
     "description": "Vining plant with marble-like patterns on its leaves.",
     "status": "available",
     "image": "plant-18.jpg"
   },
   {
-    "name": "Angel wing begonia",
+    "name": "Angel wing begonia start",
     "price": 1,
     "pot_size": "water-rooted start",
-    "quantity": 8,
+    "quantity": 4,
     "description": "Begonia with distinctive angel-wing shaped leaves. Develops pink flowers in the summer. Prefers bright, indirect light and moderate watering.",
     "status": "available",
     "image": "plant-19.jpg"
   },
   {
-    "name": "Kalanchoe",
+    "name": "Kalanchoe start",
     "price": 1,
-    "pot_size": "water-rooted start",
-    "quantity": 1,
-    "description": "",
+    "pot_size": "water-rooted",
+    "quantity": 8,
+    "description": "Small succulent plant with thick, fleshy leaves. Develops clusters of small, white flowers in the spring. Prefers bright, indirect light and minimal watering.",
     "status": "available",
     "image": "plant-20.jpg"
   },
   {
-    "name": "Scindapsus",
+    "name": "Scindapsus starts",
     "price": 5,
     "pot_size": "5 water-rooted starts",
     "quantity": 1,
-    "description": "Vining plant with beautiful silver and green leaves. Also known as Satin Pothos.",
+    "description": "Vining plant with beautiful silver and green leaves. Also known as Satin Pothos. 5 starts for $5",
     "status": "available",
     "image": "plant-21.jpg"
   },
   {
     "name": "Spider plant",
-    "price": 2,
+    "price": 1,
     "pot_size": "4 inches",
     "quantity": 1,
     "description": "Sad little spider plant that needs a little love.",
@@ -198,12 +198,66 @@
     "image": "plant-22.jpg"
   },
   {
-    "name": "Rubber plant starts",
-    "price": 1,
-    "pot_size": "water-rooted start",
+    "name": "Rubber plant start",
+    "price": 2,
+    "pot_size": "water-rooted",
     "quantity": 6,
     "description": "Rubber plant starts that can be grown into full-sized plants. Features thick, glossy, leathery leaves.",
     "status": "available",
     "image": "plant-23.jpg"
+  },
+  {
+    "name": "Golden Pothos start",
+    "price": 1,
+    "pot_size": "water-rooted",
+    "quantity": 3,
+    "description": "Large starts rooted in water.",
+    "status": "available",
+    "image": "plant-24.jpg"
+  },
+  {
+    "name": "Variagated Spider Plant start",
+    "price": 1,
+    "pot_size": "water-rooted",
+    "quantity": 6, 
+    "description": "Large starts rooted in water.",
+    "status": "available",
+    "image": "plant-25.jpg"
+  },
+  {
+    "name": "Philodendron Brasil in hanging pot",
+    "price": 6,
+    "pot_size": "3.5 inches",
+    "quantity": 1,
+    "description": "Heart-shaped leaves with variegated patterns. Pot attaches to the wall for a hanging display.",
+    "status": "available",
+    "image": "plant-26.jpg"
+  },
+  {
+    "name": "Golden Grasshopper Figurine",
+    "price": 2,
+    "pot_size": "about 2.5 inches tall",
+    "quantity": 1,
+    "description": "Little gold grasshopper figurines. Great for decorating your plant pots.",
+    "status": "available",
+    "image": "item-01.jpg"
+  },
+  {
+    "name": "Golden Snail Figurine",
+    "price": 2,
+    "pot_size": "about 3 inches tall",
+    "quantity": 1, 
+    "description": "Little gold snail figurines. Great for decorating your plant pots.",
+    "status": "available",
+    "image": "item-02.jpg"
+  },
+  {
+    "name": "Wildflowers Plaque",
+    "price": 2,
+    "pot_size": "7 x 7 inches",
+    "quantity": 1,
+    "description": "Wooden plaque with wildflower quote.",
+    "status": "available",
+    "image": "item-03.jpg"
   }
 ]
