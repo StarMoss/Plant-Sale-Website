@@ -19,7 +19,7 @@
   },
   {
     "name": "Monstera Deliciosa start",
-    "price": "3",
+    "price": "2",
     "pot_size": "water-rooted",
     "quantity": 1,
     "description": "Large roots on this start. The leaves develop splits and holes as they mature. Also known as the Swiss Cheese Plant. It is a low-maintenance plant that can thrive in low light conditions.",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Succulent Mix",
-    "price": "10",
+    "price": "8",
     "pot_size": "3.5 inches",
     "quantity": 1,
     "description": "Jade, Crassula, and Echeveria plants in a 4-inch pot. These plants are easy to care for and require minimal watering.",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Cylindrical snake plant start",
-    "price": 5,
+    "price": 3,
     "pot_size": "water-rooted",
     "quantity": 3,
     "description": "Has unique spear-shaped leaves that grow upright. It is a low-maintenance plant that can thrive in low light conditions and requires minimal watering. It also does well growing in just water.",
@@ -49,7 +49,7 @@
     "price": "10",
     "pot_size": "6 inches",
     "quantity": 1,
-    "description": "Ten-foot vines of this plant can be trained to grow up a trellis or along a wall.",
+    "description": "Eight-foot vines of this plant can be trained to grow up a trellis or along a wall.",
     "status": "available",
     "image": "plant-06.jpg"
   },
@@ -73,7 +73,7 @@
   },
   {
     "name": "Aloe Vera",
-    "price": 12,
+    "price": 10,
     "pot_size": "6 inches",
     "quantity": 1,
     "description": "It is a succulent plant that can thrive in bright, indirect light and is known for its medicinal properties.",
@@ -91,7 +91,7 @@
   },
   {
     "name": "Cylindrical snake plant",
-    "price": 10,
+    "price": 8,
     "pot_size": "6 inches",
     "quantity": 1,
     "description": "Has unique spear-shaped leaves that grow upright. It is a low-maintenance plant that requires minimal watering. Slow growing, but a very cool sculptural plant.",
@@ -99,8 +99,8 @@
     "image": "plant-11.jpg"
   },
   {
-    "name": "Aloe in ceramic pot",
-    "price": 8,
+    "name": "Aloe Vera in ceramic pot",
+    "price": 6,
     "pot_size": "4 inches",
     "quantity": 1,
     "description": "Low maintenance plant that requires minimal watering. It is a succulent plant that can thrive in bright, indirect light and is known for its medicinal properties.",
@@ -118,7 +118,7 @@
   },
   {
     "name": "Variagated Snake Plant",
-    "price": 10,
+    "price": 8,
     "pot_size": "3.5 inches",
     "quantity": 1,
     "description": "Small snake plant with variegated leaves. It is a low-maintenance plant that can thrive in low light conditions and requires minimal watering.",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Aloe Vera in terracotta pot",
-    "price": 12,
+    "price": 10,
     "pot_size": "6 inches",
     "quantity": 1,
     "description": "Succulent plant that can thrive in bright, indirect light and is known for its medicinal properties.",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Golden Pothos start",
-    "price": 1,
+    "price": ".50",
     "pot_size": "water-rooted",
     "quantity": 3,
     "description": "Large starts rooted in water.",
